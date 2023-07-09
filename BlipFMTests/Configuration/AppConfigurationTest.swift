@@ -24,7 +24,7 @@ final class AppConfigurationTest: XCTestCase {
         let contentType = AppConfiguration.shared.contentType
         XCTAssertEqual(contentType, "application/json")
     }
-    
+
     func testRequestTypeIsFilled() throws {
         let contentType = AppConfiguration.shared.requestType
         XCTAssertEqual(contentType, "json")

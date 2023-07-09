@@ -16,7 +16,7 @@ enum URLBuilderError: Error {
 }
 
 struct URLBuilder: URLBuilding {
-    
+
     func build(to path: String = "", with params: [URLQueryItem] = []) throws -> URL {
         var components = URLComponents(string: host())
         components?.queryItems = baseRequestQueryItens(to: path)
@@ -25,10 +25,10 @@ struct URLBuilder: URLBuilding {
         guard let url = components?.url else {
             throw URLBuilderError.malformedURL
         }
-        
+
         return url
     }
-    
+
     private func baseRequestQueryItens(to path: String) -> [URLQueryItem] {
         return [
             URLQueryItem(name: QueryItemKey.method.rawValue, value: path),
@@ -36,15 +36,15 @@ struct URLBuilder: URLBuilding {
             URLQueryItem(name: QueryItemKey.format.rawValue, value: requestFormat())
         ]
     }
-    
+
     private func host() -> String {
         return AppConfiguration.shared.host
     }
-    
+
     private func apiKey() -> String {
         return AppConfiguration.shared.apiKey
     }
-    
+
     private func requestFormat() -> String {
         return AppConfiguration.shared.requestType
     }
