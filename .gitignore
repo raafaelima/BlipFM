@@ -4,6 +4,7 @@
 
 ## User settings
 xcuserdata/
+.DS_Store
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
@@ -77,10 +78,14 @@ Dependencies/
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/#source-control
 
+fastlane/test_output
+fastlane/report.xml
 fastlane/report.xml
 fastlane/Preview.html
+fastlane/screenshots
 fastlane/screenshots/**/*.png
 fastlane/test_output
+fastlane/README.md
 
 # Code Injection
 #
@@ -88,3 +93,9 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+## Code Coverage results
+xcov_output/
+xcov_report/
+
+## Custom Files

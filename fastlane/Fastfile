@@ -1,0 +1,26 @@
+fastlane_require 'yaml'
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Run lint on the code"
+  lane :lint do
+    swiftlint(
+      mode: :lint,
+      config_file: ".swiftlint.yml", 
+      output_file: "fastlane/lint_output/lint_output.json",
+      raise_if_swiftlint_error: true
+    )
+  end
+
+  desc "Autocorrect any formmat issues"
+  lane :autocorrect_files do
+    swiftlint(mode: :fix)
+  end
+
+  desc "Run all Unit Tests"
+  lane :test do
+    scan(scheme: "BlipFMTests", device: "iPhone 14 Pro")
+  end
+end
