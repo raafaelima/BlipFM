@@ -14,6 +14,8 @@ extension Endpoint {
 
         var request = URLRequest(url: endpointURL)
 
+        print("\(endpointURL)")
+
         request.addValue(contentType(), forHTTPHeaderField: HeaderKey.accept.rawValue)
         request.addValue(contentType(), forHTTPHeaderField: HeaderKey.contentType.rawValue)
         return request

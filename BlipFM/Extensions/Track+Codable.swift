@@ -24,8 +24,13 @@ extension Track: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
-        self.duration = try container.decode(Int.self, forKey: .duration)
         self.url = try container.decode(String.self, forKey: .url)
+
+        do {
+            self.duration = try container.decode(Int?.self, forKey: .duration) ?? 0
+        } catch {
+            self.duration = 0
+        }
 
         let attrContainer = try container.nestedContainer(keyedBy: CodingKeys.AttrCodingKeys.self, forKey: .attr)
         self.rank = try attrContainer.decode(Int.self, forKey: .rank)

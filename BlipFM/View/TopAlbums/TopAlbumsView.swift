@@ -13,10 +13,12 @@ struct TopAlbumsView: View {
     var body: some View {
         VStack {
             List(viewModel.albums) { album in
-                albumRow(album)
-                    .onAppear {
-                        viewModel.requestMoreItemsIfNeeded(album)
-                    }
+                NavigationLink(destination: AlbumDetailsView(album: album)) {
+                    albumRow(album)
+                        .onAppear {
+                            viewModel.requestMoreItemsIfNeeded(album)
+                        }
+                }
             }
         }
         .onAppear {

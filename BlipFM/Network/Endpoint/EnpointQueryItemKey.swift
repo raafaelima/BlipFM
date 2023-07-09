@@ -8,7 +8,7 @@
 import Foundation
 
 enum EnpointQueryItemKey: String {
-    case tag = "tag"
-    case page = "page"
-    case limit = "limit"
+    case tag
+    case page
+    case limit
 }

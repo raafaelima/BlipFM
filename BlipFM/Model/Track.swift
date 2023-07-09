@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Track {
+struct Track: Identifiable {
+    let id = UUID().uuidString
     let name: String
     let duration: Int
     let url: String
