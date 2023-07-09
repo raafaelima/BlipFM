@@ -11,7 +11,9 @@ import SwiftUI
 struct BlipFmApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                TopAlbumsView()
+            }
         }
     }
 }

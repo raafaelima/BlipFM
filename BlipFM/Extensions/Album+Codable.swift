@@ -10,7 +10,7 @@ import Foundation
 extension Album: Decodable {
 
     enum CodingKeys: String, CodingKey {
-        case id = "mbid"
+        case mbid
         case name
         case image
         case artist
@@ -22,7 +22,7 @@ extension Album: Decodable {
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try container.decode(String.self, forKey: .id)
+        self.mbid = try container.decode(String.self, forKey: .mbid)
         self.name = try container.decode(String.self, forKey: .name)
         self.images = try container.decode([AlbumImage].self, forKey: .image)
 

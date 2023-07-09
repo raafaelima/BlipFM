@@ -7,9 +7,19 @@
 
 import Foundation
 
-struct Album {
-    let id: String
+struct Album: Identifiable, Equatable {
+    let id = UUID().uuidString
+    let mbid: String
     let name: String
     let artist: String
     let images: [AlbumImage]
+
+    static func == (lhs: Album, rhs: Album) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func thumbnailURL() -> URL? {
+        let albumImage = images.first(where: { $0.size == "small" })!
+        return URL(string: albumImage.url)
+    }
 }

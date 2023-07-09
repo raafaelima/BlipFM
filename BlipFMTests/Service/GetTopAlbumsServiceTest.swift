@@ -19,13 +19,13 @@ final class GetTopAlbumsServiceTest: XCTestCase {
     }
 
     func testTopAlbunsFromAValidDataSource() async throws {
-        let albums = try await sut.fetchTopAlbuns(ofGenre: "hipHop")
+        let albums = try await sut.fetchTopAlbuns(ofGenre: "hipHop").albums
         XCTAssertEqual(albums.count, 2)
-        XCTAssertEqual(albums[0].id, "cd7d8c81-d519-4149-8cd0-ade722ad19b9")
+        XCTAssertEqual(albums[0].mbid, "cd7d8c81-d519-4149-8cd0-ade722ad19b9")
         XCTAssertEqual(albums[0].name, "My Beautiful Dark Twisted Fantasy")
         XCTAssertEqual(albums[0].artist, "Kanye West")
 
-        XCTAssertEqual(albums[1].id, "06a81817-093d-40f0-aef2-90673fa550ae")
+        XCTAssertEqual(albums[1].mbid, "06a81817-093d-40f0-aef2-90673fa550ae")
         XCTAssertEqual(albums[1].name, "Graduation")
         XCTAssertEqual(albums[1].artist, "Kanye West")
     }
@@ -33,7 +33,7 @@ final class GetTopAlbumsServiceTest: XCTestCase {
     func testServiceHadMadeTheRequestToTheCorrectSource() async throws {
         _ = try await sut.fetchTopAlbuns(ofGenre: "hipHop")
         XCTAssertEqual(networkProviderMock.didCallRequestData, true)
-        XCTAssertEqual(networkProviderMock.endpointRequestURL, "https://localhost.com/?method=tag.gettopalbums&api_key=123apikey321&format=json&tag=hipHop&page=1&limit=100")
+        XCTAssertEqual(networkProviderMock.endpointRequestURL, "https://localhost.com/?method=tag.gettopalbums&api_key=123apikey321&format=json&tag=hipHop&page=1&limit=50")
     }
 
     func testThrowServiceErrorWhenThereIsANetworkProblem() async throws {

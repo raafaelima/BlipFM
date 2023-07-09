@@ -17,13 +17,12 @@ struct GetTopAlbumsService {
         self.networkProvider = networkProvider
     }
 
-    func fetchTopAlbuns(ofGenre genre: String, page: Int = 1) async throws -> [Album] {
+    func fetchTopAlbuns(ofGenre genre: String, page: Int = 1) async throws -> AlbumResponse {
         let endpoint = GetTopAlbunsEndpoint(genre: genre, page: page)
 
         do {
             let data = try await networkProvider.requestData(from: endpoint)
-            let parsedResponse: AlbumResponse = try parser.process(data: data)
-            return parsedResponse.albums
+            return try parser.process(data: data)
         } catch {
             throw handleError(error)
         }

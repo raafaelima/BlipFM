@@ -24,7 +24,7 @@ class GetTopAlbunsResponseTest: XCTestCase {
     func testAlbumHasTheCorrectDataWhenDecoded() throws {
         let album = sut.albums.first
         XCTAssertNotNil(album)
-        XCTAssertEqual(album?.id, "cd7d8c81-d519-4149-8cd0-ade722ad19b9")
+        XCTAssertEqual(album?.mbid, "cd7d8c81-d519-4149-8cd0-ade722ad19b9")
         XCTAssertEqual(album?.name, "My Beautiful Dark Twisted Fantasy")
         XCTAssertEqual(album?.artist, "Kanye West")
         XCTAssertEqual(album?.images.count, 4)
