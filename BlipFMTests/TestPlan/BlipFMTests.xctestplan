@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "649F92E0-5393-44B5-8675-3242DE9239C8",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:BlipFM.xcodeproj",
+        "identifier" : "42B7A8BB2A58BDDC009FF1F7",
+        "name" : "BlipFMTests"
+      }
+    }
+  ],
+  "version" : 1
+}
