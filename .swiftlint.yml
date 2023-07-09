@@ -3,4 +3,11 @@ identifier_name:
 
 disabled_rules:
   - line_length
-  
+  - nesting
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - fastlane
+  - DerivedData
+  - BlipFMTests
