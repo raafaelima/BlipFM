@@ -33,7 +33,7 @@ final class GetTopAlbumsServiceTest: XCTestCase {
     func testServiceHadMadeTheRequestToTheCorrectSource() async throws {
         _ = try await sut.fetchTopAlbuns(ofGenre: "hipHop")
         XCTAssertEqual(networkProviderMock.didCallRequestData, true)
-        XCTAssertEqual(networkProviderMock.endpointRequestURL, "https://localhost.com/?method=tag.gettopalbums&api_key=123apikey321&format=json&tag=hipHop&page=1&limit=50")
+        XCTAssertEqual(networkProviderMock.endpointRequestURL, "https://localhost.com/?method=tag.gettopalbums&api_key=123apikey321&format=json&tag=hipHop&page=1&limit=60")
     }
 
     func testThrowServiceErrorWhenThereIsANetworkProblem() async throws {
