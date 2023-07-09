@@ -20,3 +20,29 @@ In the app you will find the following structure:
 
 ### High-Level Architecture
 ![GeneralArch](https://github.com/raafaelima/BlipFM/assets/7543763/6593a1a8-47c6-4522-b539-29ec477486b4)
+
+## Getting Started
+
+### XCode
+
+To run the project on XCode, you just need to have iOS 16.0 supported versions of Xcode and macOS, the development was made using those support versions below.
+
+1. macOS Monterey 12.5 or higher
+2. XCode Version 13 or higher
+
+### Fastlane
+If you wanna run the Fastlane scripts, you need to have some ruby version installed on your machine. There's a script on the `make setup` phase that will install the tools needed (homebrew, rbenv, swiftlint, and ruby). If you already have the ruby set on your dev machine, you just need to run the `make install` to install the gems and then use the `make test` and `make lint` to run the tests and the lint, respectively.
+
+## Running
+
+1. Run the tests
+>
+>```bash
+>make test
+>```
+
+2. List all targets with documentation
+>
+>```bash
+>make
+>```
