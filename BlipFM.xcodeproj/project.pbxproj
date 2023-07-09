@@ -112,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				42027F212A5AC282002CB0B9 /* Provider */,
-				42027F242A5AC282002CB0B9 /* Parser */,
 				42027F262A5AC282002CB0B9 /* Support */,
 				42027F282A5AC282002CB0B9 /* Endpoint */,
 				42027F2F2A5AC282002CB0B9 /* Error */,
@@ -168,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				42027F3D2A5AC369002CB0B9 /* Provider */,
-				42027F3F2A5AC369002CB0B9 /* Parser */,
 				42027F412A5AC369002CB0B9 /* Support */,
 				42027F452A5AC369002CB0B9 /* Endpoint */,
 			);
@@ -250,6 +248,22 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		42027F672A5AD3C0002CB0B9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				42027F242A5AC282002CB0B9 /* Parser */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		42027F682A5AD3C6002CB0B9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				42027F3F2A5AC369002CB0B9 /* Parser */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		42B7A8A22A58BDDA009FF1F7 = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +293,7 @@
 				42027F4C2A5AC3A8002CB0B9 /* Extensions */,
 				42027F1E2A5AC282002CB0B9 /* Network */,
 				42B7A8B52A58BDDC009FF1F7 /* Preview Content */,
+				42027F672A5AD3C0002CB0B9 /* Service */,
 				42B7A8DB2A58BEE4009FF1F7 /* View */,
 			);
 			path = BlipFM;
@@ -297,6 +312,7 @@
 			children = (
 				42027F5E2A5AD084002CB0B9 /* Configuration */,
 				42027F3C2A5AC369002CB0B9 /* Network */,
+				42027F682A5AD3C6002CB0B9 /* Service */,
 				42B7A8DC2A58C410009FF1F7 /* TestPlan */,
 			);
 			path = BlipFMTests;
