@@ -24,28 +24,37 @@ class TopAlbumsViewModel: ObservableObject {
     private var state: TopAlbunsUIState = .idle
     private let getTopAlbumsService: GetTopAlbumsService = GetTopAlbumsService()
 
-    @MainActor
+    private var currentTask: Task<Void, Never>? {
+        willSet {
+            if let task = currentTask {
+                if task.isCancelled { return }
+                task.cancel()
+            }
+        }
+    }
+
     func fetchTopAlbums() {
         currentPage = 1
         state = .loadingFirstPage
         fetchAlbums(page: currentPage)
     }
 
-    @MainActor
     func fetchNextPage() {
         currentPage += 1
         state = .loadingNextPage
         fetchAlbums(page: currentPage)
     }
 
-    @MainActor
     private func fetchAlbums(page: Int) {
-        Task {
+        currentTask = Task {
             do {
                 let albumResponse = try await getTopAlbumsService.fetchTopAlbuns(ofGenre: "hip-hop", page: currentPage)
-                self.albums.append(contentsOf: albumResponse.albums)
-                self.totalPages = albumResponse.totalPages
-                self.state = .loaded
+
+                DispatchQueue.main.async { [weak self] in
+                    self?.albums.append(contentsOf: albumResponse.albums)
+                    self?.totalPages = albumResponse.totalPages
+                    self?.state = .loaded
+                }
             } catch {
                 print(error.localizedDescription)
             }

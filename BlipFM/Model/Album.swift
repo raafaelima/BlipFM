@@ -15,7 +15,7 @@ struct Album: Identifiable, Equatable {
     let images: [AlbumImage]
 
     static func == (lhs: Album, rhs: Album) -> Bool {
-        return lhs.id == rhs.id
+        return lhs.mbid == rhs.mbid || lhs.name == rhs.name
     }
 
     func thumbnailURL() -> URL? {

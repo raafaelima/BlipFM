@@ -23,6 +23,7 @@ struct TopAlbumsView: View {
             viewModel.fetchTopAlbums()
         }
         .navigationTitle("Top Hip-Hop Albuns")
+        .preferredColorScheme(.dark)
     }
 
     private func albumRow(_ album: Album) -> some View {
@@ -65,7 +66,6 @@ struct TopAlbumsView_Previews: PreviewProvider {
 
 class PreviewAlbumsViewModel: TopAlbumsViewModel {
 
-    @MainActor
     override func fetchTopAlbums() {
 
         let images = [
