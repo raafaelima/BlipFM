@@ -11,9 +11,13 @@ struct GetAlbumDetailService {
 
     private let parser: DataParser
     private let networkProvider: NetworkProvider
+    private let cacheManager: CacheManager<AlbumDetailResponse>
 
-    init( networkProvider: NetworkProvider = URLSessionNetworkProvider(), parser: DataParser = JsonDataParser()) {
+    init(networkProvider: NetworkProvider = URLSessionNetworkProvider(),
+         parser: DataParser = JsonDataParser(),
+         cacheManager: CacheManager<AlbumDetailResponse> = CacheManager<AlbumDetailResponse>()) {
         self.parser = parser
+        self.cacheManager = cacheManager
         self.networkProvider = networkProvider
     }
 
@@ -22,9 +26,15 @@ struct GetAlbumDetailService {
 
         do {
             let data = try await networkProvider.requestData(from: endpoint)
-            return try parser.process(data: data)
+            let parsedData: AlbumDetailResponse = try parser.process(data: data)
+            cacheManager.setObject(parsedData, forKey: .albumDetailResponse)
+            return parsedData
         } catch {
-            throw handleError(error)
+            if let networkError = error as? NetworkError, networkError == .notReachable {
+                return try retrieveDataFromCache()
+            } else {
+                throw handleError(error)
+            }
         }
     }
 
@@ -36,5 +46,12 @@ struct GetAlbumDetailService {
         } else {
             return ServiceError.unspecifiedError
         }
+    }
+
+    private func retrieveDataFromCache() throws -> AlbumDetailResponse {
+        guard let response = cacheManager.getObject(forKey: .albumDetailResponse) else {
+            throw ServiceError.invalidSourceData
+        }
+        return response
     }
 }

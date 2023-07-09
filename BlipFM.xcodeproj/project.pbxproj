@@ -60,6 +60,9 @@
 		42B7A8B72A58BDDC009FF1F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B7A8B62A58BDDC009FF1F7 /* Preview Assets.xcassets */; };
 		42B7A8CB2A58BDDC009FF1F7 /* BlipFMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7A8CA2A58BDDC009FF1F7 /* BlipFMUITests.swift */; };
 		42B7A8CD2A58BDDC009FF1F7 /* BlipFMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7A8CC2A58BDDC009FF1F7 /* BlipFMUITestsLaunchTests.swift */; };
+		42FF0C152A5B4D8F00A0726D /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF0C142A5B4D8F00A0726D /* CacheManager.swift */; };
+		42FF0C172A5B50A800A0726D /* CacheKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF0C162A5B50A800A0726D /* CacheKeys.swift */; };
+		42FF0C1A2A5B510C00A0726D /* CacheManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF0C192A5B510C00A0726D /* CacheManagerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +144,9 @@
 		42B7A8CA2A58BDDC009FF1F7 /* BlipFMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlipFMUITests.swift; sourceTree = "<group>"; };
 		42B7A8CC2A58BDDC009FF1F7 /* BlipFMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlipFMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		42B7A8DD2A58C42B009FF1F7 /* BlipFMTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BlipFMTests.xctestplan; sourceTree = "<group>"; };
+		42FF0C142A5B4D8F00A0726D /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		42FF0C162A5B50A800A0726D /* CacheKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheKeys.swift; sourceTree = "<group>"; };
+		42FF0C192A5B510C00A0726D /* CacheManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManagerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				42B7A8B22A58BDDC009FF1F7 /* Assets.xcassets */,
+				42FF0C132A5B4D8600A0726D /* Cache */,
 				42B7A8D92A58BE77009FF1F7 /* Configuration */,
 				42B7A8DA2A58BEA7009FF1F7 /* Core */,
 				42027F4C2A5AC3A8002CB0B9 /* Extensions */,
@@ -493,6 +500,7 @@
 		42B7A8BF2A58BDDC009FF1F7 /* BlipFMTests */ = {
 			isa = PBXGroup;
 			children = (
+				42FF0C182A5B50FC00A0726D /* Cache */,
 				42027F5E2A5AD084002CB0B9 /* Configuration */,
 				42027F6F2A5AD831002CB0B9 /* Helper */,
 				42027F722A5AD852002CB0B9 /* JSONMocks */,
@@ -545,6 +553,23 @@
 				42B7A8DD2A58C42B009FF1F7 /* BlipFMTests.xctestplan */,
 			);
 			path = TestPlan;
+			sourceTree = "<group>";
+		};
+		42FF0C132A5B4D8600A0726D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				42FF0C142A5B4D8F00A0726D /* CacheManager.swift */,
+				42FF0C162A5B50A800A0726D /* CacheKeys.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		42FF0C182A5B50FC00A0726D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				42FF0C192A5B510C00A0726D /* CacheManagerTest.swift */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -685,6 +710,7 @@
 				422893B92A5AFC26001D22F7 /* DataParser.swift in Sources */,
 				422893B62A5AF9F0001D22F7 /* ParserError.swift in Sources */,
 				42027F762A5AD91C002CB0B9 /* AlbumResponse.swift in Sources */,
+				42FF0C152A5B4D8F00A0726D /* CacheManager.swift in Sources */,
 				422893BF2A5AFDA1001D22F7 /* TopAlbumsViewModel.swift in Sources */,
 				42027F7E2A5ADF28002CB0B9 /* Album+Codable.swift in Sources */,
 				42027F542A5ACCB9002CB0B9 /* AppConfiguration.swift in Sources */,
@@ -704,6 +730,7 @@
 				42027F522A5ACB98002CB0B9 /* HeaderKey.swift in Sources */,
 				42027F3B2A5AC282002CB0B9 /* NetworkError.swift in Sources */,
 				42027F392A5AC282002CB0B9 /* Endpoint.swift in Sources */,
+				42FF0C172A5B50A800A0726D /* CacheKeys.swift in Sources */,
 				42027F942A5AF22D002CB0B9 /* GetTopAlbunsEndpoint.swift in Sources */,
 				4235A63A2A5B1AB900530BE8 /* AlbumDetailsView.swift in Sources */,
 				4235A63C2A5B1B4A00530BE8 /* AlbumDetailsViewModel.swift in Sources */,
@@ -726,6 +753,7 @@
 				42027F4A2A5AC369002CB0B9 /* UrlBuilderTest.swift in Sources */,
 				42027F4B2A5AC369002CB0B9 /* DummyEndpoint.swift in Sources */,
 				42027F8C2A5AE727002CB0B9 /* GetAlbumDetailsResponse.swift in Sources */,
+				42FF0C1A2A5B510C00A0726D /* CacheManagerTest.swift in Sources */,
 				42027F602A5AD091002CB0B9 /* AppConfigurationTest.swift in Sources */,
 				4235A6432A5B31D200530BE8 /* GetAlbumDetailServiceTest.swift in Sources */,
 				42027F712A5AD838002CB0B9 /* JsonHelper.swift in Sources */,

@@ -12,5 +12,6 @@ enum NetworkError: Error, Equatable {
     case unauthorized
     case internalServerError
     case unspecifiedError
+    case notReachable
     case untrackedError(statusCode: Int)
 }

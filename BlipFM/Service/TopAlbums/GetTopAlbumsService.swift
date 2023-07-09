@@ -11,9 +11,13 @@ struct GetTopAlbumsService {
 
     private let parser: DataParser
     private let networkProvider: NetworkProvider
+    private let cacheManager: CacheManager<AlbumResponse>
 
-    init( networkProvider: NetworkProvider = URLSessionNetworkProvider(), parser: DataParser = JsonDataParser()) {
+    init(networkProvider: NetworkProvider = URLSessionNetworkProvider(),
+         parser: DataParser = JsonDataParser(),
+         cacheManager: CacheManager<AlbumResponse> = CacheManager<AlbumResponse>()) {
         self.parser = parser
+        self.cacheManager = cacheManager
         self.networkProvider = networkProvider
     }
 
@@ -22,9 +26,15 @@ struct GetTopAlbumsService {
 
         do {
             let data = try await networkProvider.requestData(from: endpoint)
-            return try parser.process(data: data)
+            let parsedData: AlbumResponse = try parser.process(data: data)
+            cacheManager.setObject(parsedData, forKey: .topAlbunsResponse)
+            return parsedData
         } catch {
-            throw handleError(error)
+            if let networkError = error as? NetworkError, networkError == .notReachable {
+                return try retrieveDataFromCache()
+            } else {
+                throw handleError(error)
+            }
         }
     }
 
@@ -36,5 +46,13 @@ struct GetTopAlbumsService {
         } else {
             return ServiceError.unspecifiedError
         }
+    }
+
+    private func retrieveDataFromCache() throws -> AlbumResponse {
+        guard let response = cacheManager.getObject(forKey: .topAlbunsResponse) else {
+            throw ServiceError.invalidSourceData
+        }
+
+        return response
     }
 }
