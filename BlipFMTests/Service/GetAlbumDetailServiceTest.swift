@@ -32,7 +32,7 @@ final class GetAlbumDetailServiceTest: XCTestCase {
         XCTAssertEqual(networkProviderMock.didCallRequestData, true)
         XCTAssertEqual(networkProviderMock.endpointRequestURL, "https://localhost.com/?method=album.getinfo&api_key=123apikey321&format=json&mbid=123456")
     }
-    
+
     func testServiceHadMadeTheRequestToTheCorrectSourceWithArtistAndName() async throws {
         _ = try await sut.fetchDetails(of: Album(mbid: "", name: "Graduation", artist: "Kanye West", images: []))
         XCTAssertEqual(networkProviderMock.didCallRequestData, true)
