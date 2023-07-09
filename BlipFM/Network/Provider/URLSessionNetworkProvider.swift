@@ -9,13 +9,20 @@ import Foundation
 
 struct URLSessionNetworkProvider: NetworkProvider {
 
-    var session: URLSession
+    private var session: URLSession
+    private var reachability: ReachabilityType
 
-    init(session: URLSession = .shared) {
+    init(session: URLSession = .shared, reachability: ReachabilityType = Reachability()) {
         self.session = session
+        self.reachability = reachability
     }
 
     func requestData(from endpoint: Endpoint) async throws -> Data {
+
+        guard reachability.currentStatus() != .notReachable else {
+            throw NetworkError.notReachable
+        }
+
         let (data, response) = try await session.data(for: endpoint.urlRequest())
 
         guard let response = response as? HTTPURLResponse else {

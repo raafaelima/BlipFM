@@ -63,6 +63,7 @@
 		42FF0C152A5B4D8F00A0726D /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF0C142A5B4D8F00A0726D /* CacheManager.swift */; };
 		42FF0C172A5B50A800A0726D /* CacheKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF0C162A5B50A800A0726D /* CacheKeys.swift */; };
 		42FF0C1A2A5B510C00A0726D /* CacheManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF0C192A5B510C00A0726D /* CacheManagerTest.swift */; };
+		42FF0C1D2A5B544100A0726D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF0C1C2A5B544100A0726D /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,7 @@
 		42FF0C142A5B4D8F00A0726D /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		42FF0C162A5B50A800A0726D /* CacheKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheKeys.swift; sourceTree = "<group>"; };
 		42FF0C192A5B510C00A0726D /* CacheManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManagerTest.swift; sourceTree = "<group>"; };
+		42FF0C1C2A5B544100A0726D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,11 +179,12 @@
 		42027F1E2A5AC282002CB0B9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				42027F742A5AD915002CB0B9 /* Reponse */,
-				42027F212A5AC282002CB0B9 /* Provider */,
-				42027F262A5AC282002CB0B9 /* Support */,
 				42027F282A5AC282002CB0B9 /* Endpoint */,
 				42027F2F2A5AC282002CB0B9 /* Error */,
+				42027F212A5AC282002CB0B9 /* Provider */,
+				42FF0C1B2A5B543B00A0726D /* Reachability */,
+				42027F742A5AD915002CB0B9 /* Reponse */,
+				42027F262A5AC282002CB0B9 /* Support */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -572,6 +575,14 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		42FF0C1B2A5B543B00A0726D /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				42FF0C1C2A5B544100A0726D /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -719,6 +730,7 @@
 				42027F6E2A5AD4BB002CB0B9 /* Album.swift in Sources */,
 				42027F882A5AE5A9002CB0B9 /* Track+Codable.swift in Sources */,
 				42027F322A5AC282002CB0B9 /* NetworkProvider.swift in Sources */,
+				42FF0C1D2A5B544100A0726D /* Reachability.swift in Sources */,
 				4235A63F2A5B1CE800530BE8 /* GetAlbumDetailService.swift in Sources */,
 				42027F822A5ADF75002CB0B9 /* AlbumImage+Decodable.swift in Sources */,
 				42027F862A5AE5A3002CB0B9 /* Track.swift in Sources */,
