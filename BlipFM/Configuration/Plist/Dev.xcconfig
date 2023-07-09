@@ -1,0 +1,11 @@
+//
+//  Dev.xcconfig
+//  BlipFM
+//
+//  Created by Lima, Rafael on 09/07/2023.
+//
+
+HOST=https:/$()/ws.audioscrobbler.com/2.0/
+API_KEY=f1c1d688022281d094891a2739284db1
+CONTENT_TYPE=application/json
+REQUEST_TYPE=json

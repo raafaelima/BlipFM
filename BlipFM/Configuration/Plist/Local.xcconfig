@@ -1,0 +1,11 @@
+//
+//  Local.xcconfig
+//  BlipFM
+//
+//  Created by Lima, Rafael on 09/07/2023.
+//
+
+HOST=https:/$()/localhost.com/
+API_KEY=123apikey321
+CONTENT_TYPE=application/json
+REQUEST_TYPE=json

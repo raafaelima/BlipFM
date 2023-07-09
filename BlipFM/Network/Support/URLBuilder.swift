@@ -38,14 +38,14 @@ struct URLBuilder: URLBuilding {
     }
     
     private func host() -> String {
-        return "https://ws.audioscrobbler.com/2.0/"
+        return AppConfiguration.shared.host
     }
     
     private func apiKey() -> String {
-        return "f1c1d688022281d094891a2739284db1"
+        return AppConfiguration.shared.apiKey
     }
     
     private func requestFormat() -> String {
-        return "json"
+        return AppConfiguration.shared.requestType
     }
 }

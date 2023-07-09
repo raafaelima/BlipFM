@@ -20,6 +20,6 @@ extension Endpoint {
     }
 
     private func contentType() -> String {
-        return "application/json"
+        return AppConfiguration.shared.contentType
     }
 }
