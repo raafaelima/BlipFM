@@ -39,6 +39,15 @@
 		42027F8C2A5AE727002CB0B9 /* GetAlbumDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42027F8B2A5AE727002CB0B9 /* GetAlbumDetailsResponse.swift */; };
 		42027F8E2A5AE76F002CB0B9 /* AlbumDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42027F8D2A5AE76F002CB0B9 /* AlbumDetailResponse.swift */; };
 		42027F902A5AE7BC002CB0B9 /* album-detail.json in Resources */ = {isa = PBXBuildFile; fileRef = 42027F8F2A5AE7BA002CB0B9 /* album-detail.json */; };
+		42027F922A5AF20E002CB0B9 /* GetTopAlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42027F912A5AF20E002CB0B9 /* GetTopAlbumsService.swift */; };
+		42027F942A5AF22D002CB0B9 /* GetTopAlbunsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42027F932A5AF22D002CB0B9 /* GetTopAlbunsEndpoint.swift */; };
+		42027F962A5AF3F8002CB0B9 /* EnpointQueryItemKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42027F952A5AF3F8002CB0B9 /* EnpointQueryItemKey.swift */; };
+		42027F9A2A5AF5E7002CB0B9 /* URLSessionNetworkProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42027F992A5AF5E7002CB0B9 /* URLSessionNetworkProviderMock.swift */; };
+		42027F9C2A5AF667002CB0B9 /* GetTopAlbumsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42027F9B2A5AF667002CB0B9 /* GetTopAlbumsServiceTest.swift */; };
+		422893B42A5AF9C9001D22F7 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422893B22A5AF8DF001D22F7 /* ServiceError.swift */; };
+		422893B62A5AF9F0001D22F7 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422893B52A5AF9F0001D22F7 /* ParserError.swift */; };
+		422893B92A5AFC26001D22F7 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422893B72A5AFC12001D22F7 /* DataParser.swift */; };
+		422893BC2A5AFC60001D22F7 /* JsonDataParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422893BB2A5AFC60001D22F7 /* JsonDataParserMock.swift */; };
 		42B7A8AF2A58BDDA009FF1F7 /* BlipFmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7A8AE2A58BDDA009FF1F7 /* BlipFmApp.swift */; };
 		42B7A8B12A58BDDA009FF1F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7A8B02A58BDDA009FF1F7 /* ContentView.swift */; };
 		42B7A8B32A58BDDC009FF1F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B7A8B22A58BDDC009FF1F7 /* Assets.xcassets */; };
@@ -100,6 +109,15 @@
 		42027F8B2A5AE727002CB0B9 /* GetAlbumDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAlbumDetailsResponse.swift; sourceTree = "<group>"; };
 		42027F8D2A5AE76F002CB0B9 /* AlbumDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailResponse.swift; sourceTree = "<group>"; };
 		42027F8F2A5AE7BA002CB0B9 /* album-detail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "album-detail.json"; sourceTree = "<group>"; };
+		42027F912A5AF20E002CB0B9 /* GetTopAlbumsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopAlbumsService.swift; sourceTree = "<group>"; };
+		42027F932A5AF22D002CB0B9 /* GetTopAlbunsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopAlbunsEndpoint.swift; sourceTree = "<group>"; };
+		42027F952A5AF3F8002CB0B9 /* EnpointQueryItemKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnpointQueryItemKey.swift; sourceTree = "<group>"; };
+		42027F992A5AF5E7002CB0B9 /* URLSessionNetworkProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionNetworkProviderMock.swift; sourceTree = "<group>"; };
+		42027F9B2A5AF667002CB0B9 /* GetTopAlbumsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopAlbumsServiceTest.swift; sourceTree = "<group>"; };
+		422893B22A5AF8DF001D22F7 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		422893B52A5AF9F0001D22F7 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
+		422893B72A5AFC12001D22F7 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		422893BB2A5AFC60001D22F7 /* JsonDataParserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDataParserMock.swift; sourceTree = "<group>"; };
 		42B7A8AB2A58BDDA009FF1F7 /* BlipFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlipFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B7A8AE2A58BDDA009FF1F7 /* BlipFmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlipFmApp.swift; sourceTree = "<group>"; };
 		42B7A8B02A58BDDA009FF1F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,7 +180,9 @@
 		42027F242A5AC282002CB0B9 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				422893B72A5AFC12001D22F7 /* DataParser.swift */,
 				42027F252A5AC282002CB0B9 /* JsonDataParser.swift */,
+				422893B52A5AF9F0001D22F7 /* ParserError.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -180,8 +200,9 @@
 		42027F282A5AC282002CB0B9 /* Endpoint */ = {
 			isa = PBXGroup;
 			children = (
-				42027F292A5AC282002CB0B9 /* EndpointPath.swift */,
 				42027F2C2A5AC282002CB0B9 /* Endpoint.swift */,
+				42027F292A5AC282002CB0B9 /* EndpointPath.swift */,
+				42027F952A5AF3F8002CB0B9 /* EnpointQueryItemKey.swift */,
 			);
 			path = Endpoint;
 			sourceTree = "<group>";
@@ -208,6 +229,7 @@
 		42027F3D2A5AC369002CB0B9 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				42027F982A5AF5E1002CB0B9 /* Mock */,
 				42027F3E2A5AC369002CB0B9 /* URLSessionNetworkProviderTest.swift */,
 			);
 			path = Provider;
@@ -216,6 +238,7 @@
 		42027F3F2A5AC369002CB0B9 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				422893BA2A5AFC4C001D22F7 /* Mock */,
 				42027F402A5AC369002CB0B9 /* JsonDataParserTest.swift */,
 			);
 			path = Parser;
@@ -287,7 +310,9 @@
 		42027F672A5AD3C0002CB0B9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				422893B12A5AF8D6001D22F7 /* Error */,
 				42027F242A5AC282002CB0B9 /* Parser */,
+				42027F972A5AF446002CB0B9 /* TopAlbums */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -296,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				42027F3F2A5AC369002CB0B9 /* Parser */,
+				42027F9B2A5AF667002CB0B9 /* GetTopAlbumsServiceTest.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -344,6 +370,39 @@
 				42027F8B2A5AE727002CB0B9 /* GetAlbumDetailsResponse.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		42027F972A5AF446002CB0B9 /* TopAlbums */ = {
+			isa = PBXGroup;
+			children = (
+				42027F912A5AF20E002CB0B9 /* GetTopAlbumsService.swift */,
+				42027F932A5AF22D002CB0B9 /* GetTopAlbunsEndpoint.swift */,
+			);
+			path = TopAlbums;
+			sourceTree = "<group>";
+		};
+		42027F982A5AF5E1002CB0B9 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				42027F992A5AF5E7002CB0B9 /* URLSessionNetworkProviderMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		422893B12A5AF8D6001D22F7 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				422893B22A5AF8DF001D22F7 /* ServiceError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		422893BA2A5AFC4C001D22F7 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				422893BB2A5AFC60001D22F7 /* JsonDataParserMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		42B7A8A22A58BDDA009FF1F7 = {
@@ -581,6 +640,8 @@
 				42027F4E2A5AC3B3002CB0B9 /* Endpoint+UrlRequest.swift in Sources */,
 				42B7A8B12A58BDDA009FF1F7 /* ContentView.swift in Sources */,
 				42027F502A5AC973002CB0B9 /* QueryItemKey.swift in Sources */,
+				422893B92A5AFC26001D22F7 /* DataParser.swift in Sources */,
+				422893B62A5AF9F0001D22F7 /* ParserError.swift in Sources */,
 				42027F762A5AD91C002CB0B9 /* AlbumResponse.swift in Sources */,
 				42027F7E2A5ADF28002CB0B9 /* Album+Codable.swift in Sources */,
 				42027F542A5ACCB9002CB0B9 /* AppConfiguration.swift in Sources */,
@@ -593,11 +654,15 @@
 				42027F862A5AE5A3002CB0B9 /* Track.swift in Sources */,
 				42027F802A5ADF61002CB0B9 /* AlbumImage.swift in Sources */,
 				42027F362A5AC282002CB0B9 /* EndpointPath.swift in Sources */,
+				422893B42A5AF9C9001D22F7 /* ServiceError.swift in Sources */,
 				42B7A8AF2A58BDDA009FF1F7 /* BlipFmApp.swift in Sources */,
 				42027F342A5AC282002CB0B9 /* JsonDataParser.swift in Sources */,
 				42027F522A5ACB98002CB0B9 /* HeaderKey.swift in Sources */,
 				42027F3B2A5AC282002CB0B9 /* NetworkError.swift in Sources */,
 				42027F392A5AC282002CB0B9 /* Endpoint.swift in Sources */,
+				42027F942A5AF22D002CB0B9 /* GetTopAlbunsEndpoint.swift in Sources */,
+				42027F962A5AF3F8002CB0B9 /* EnpointQueryItemKey.swift in Sources */,
+				42027F922A5AF20E002CB0B9 /* GetTopAlbumsService.swift in Sources */,
 				42027F332A5AC282002CB0B9 /* URLSessionNetworkProvider.swift in Sources */,
 				42027F8E2A5AE76F002CB0B9 /* AlbumDetailResponse.swift in Sources */,
 				42027F8A2A5AE6F5002CB0B9 /* AlbumDetails+Codable.swift in Sources */,
@@ -608,12 +673,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42027F9C2A5AF667002CB0B9 /* GetTopAlbumsServiceTest.swift in Sources */,
 				42027F792A5AD9AF002CB0B9 /* GetTopAlbunsResponseTest.swift in Sources */,
+				422893BC2A5AFC60001D22F7 /* JsonDataParserMock.swift in Sources */,
 				42027F4A2A5AC369002CB0B9 /* UrlBuilderTest.swift in Sources */,
 				42027F4B2A5AC369002CB0B9 /* DummyEndpoint.swift in Sources */,
 				42027F8C2A5AE727002CB0B9 /* GetAlbumDetailsResponse.swift in Sources */,
 				42027F602A5AD091002CB0B9 /* AppConfigurationTest.swift in Sources */,
 				42027F712A5AD838002CB0B9 /* JsonHelper.swift in Sources */,
+				42027F9A2A5AF5E7002CB0B9 /* URLSessionNetworkProviderMock.swift in Sources */,
 				42027F482A5AC369002CB0B9 /* JsonDataParserTest.swift in Sources */,
 				42027F472A5AC369002CB0B9 /* URLSessionNetworkProviderTest.swift in Sources */,
 				42027F492A5AC369002CB0B9 /* URLProtocolMock.swift in Sources */,
