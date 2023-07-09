@@ -1,0 +1,75 @@
+{
+  "albums": {
+    "album": [
+      {
+        "name": "My Beautiful Dark Twisted Fantasy",
+        "mbid": "cd7d8c81-d519-4149-8cd0-ade722ad19b9",
+        "url": "https://www.last.fm/music/Kanye+West",
+        "artist": {
+          "name": "Kanye West",
+          "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "url": "https://www.last.fm/music/Kanye+West"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/8a071c4b073625018de5f0ac58727511.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/8a071c4b073625018de5f0ac58727511.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/8a071c4b073625018de5f0ac58727511.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/8a071c4b073625018de5f0ac58727511.png",
+            "size": "extralarge"
+          }
+        ],
+        "@attr": {
+          "rank": "1"
+        }
+      },
+      {
+        "name": "Graduation",
+        "mbid": "06a81817-093d-40f0-aef2-90673fa550ae",
+        "url": "https://www.last.fm/music/Kanye+West",
+        "artist": {
+          "name": "Kanye West",
+          "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051",
+          "url": "https://www.last.fm/music/Kanye+West"
+        },
+        "image": [
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/34s/ec93136e9d7f5aed02ebbd4ae5200453.png",
+            "size": "small"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/64s/ec93136e9d7f5aed02ebbd4ae5200453.png",
+            "size": "medium"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/174s/ec93136e9d7f5aed02ebbd4ae5200453.png",
+            "size": "large"
+          },
+          {
+            "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ec93136e9d7f5aed02ebbd4ae5200453.png",
+            "size": "extralarge"
+          }
+        ],
+        "@attr": {
+          "rank": "2"
+        }
+      }
+    ],
+    "@attr": {
+      "tag": "Hip-Hop",
+      "page": "1",
+      "perPage": "2",
+      "totalPages": "9557",
+      "total": "19113"
+    }
+  }
+}

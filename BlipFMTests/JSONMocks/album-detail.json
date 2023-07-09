@@ -1,0 +1,289 @@
+{
+  "album": {
+    "artist": "Kanye West",
+    "tags": {
+      "tag": [
+        {
+          "url": "https://www.last.fm/tag/hip-hop",
+          "name": "hip-hop"
+        },
+        {
+          "url": "https://www.last.fm/tag/rap",
+          "name": "rap"
+        },
+        {
+          "url": "https://www.last.fm/tag/kanye+west",
+          "name": "kanye west"
+        },
+        {
+          "url": "https://www.last.fm/tag/hip+hop",
+          "name": "hip hop"
+        },
+        {
+          "url": "https://www.last.fm/tag/rnb",
+          "name": "rnb"
+        }
+      ]
+    },
+    "name": "Graduation",
+    "image": [
+      {
+        "size": "small",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/34s/ec93136e9d7f5aed02ebbd4ae5200453.jpg"
+      },
+      {
+        "size": "medium",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/64s/ec93136e9d7f5aed02ebbd4ae5200453.jpg"
+      },
+      {
+        "size": "large",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/174s/ec93136e9d7f5aed02ebbd4ae5200453.jpg"
+      },
+      {
+        "size": "extralarge",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ec93136e9d7f5aed02ebbd4ae5200453.jpg"
+      },
+      {
+        "size": "mega",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ec93136e9d7f5aed02ebbd4ae5200453.jpg"
+      },
+      {
+        "size": "",
+        "#text": "https://lastfm.freetls.fastly.net/i/u/300x300/ec93136e9d7f5aed02ebbd4ae5200453.jpg"
+      }
+    ],
+    "tracks": {
+      "track": [
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 195,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Good+Morning",
+          "name": "Good Morning",
+          "@attr": {
+            "rank": 1
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 167,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Champion",
+          "name": "Champion",
+          "@attr": {
+            "rank": 2
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 311,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Stronger",
+          "name": "Stronger",
+          "@attr": {
+            "rank": 3
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 244,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/I+Wonder",
+          "name": "I Wonder",
+          "@attr": {
+            "rank": 4
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 207,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Good+Life",
+          "name": "Good Life",
+          "@attr": {
+            "rank": 5
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 270,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Can%27t+Tell+Me+Nothing",
+          "name": "Can't Tell Me Nothing",
+          "@attr": {
+            "rank": 6
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 204,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Barry+Bonds",
+          "name": "Barry Bonds",
+          "@attr": {
+            "rank": 7
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 313,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Drunk+and+Hot+Girls",
+          "name": "Drunk and Hot Girls",
+          "@attr": {
+            "rank": 8
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 237,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Flashing+Lights",
+          "name": "Flashing Lights",
+          "@attr": {
+            "rank": 9
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 227,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Everything+I+Am",
+          "name": "Everything I Am",
+          "@attr": {
+            "rank": 10
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 212,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/The+Glory",
+          "name": "The Glory",
+          "@attr": {
+            "rank": 11
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 203,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Homecoming",
+          "name": "Homecoming",
+          "@attr": {
+            "rank": 12
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        },
+        {
+          "streamable": {
+            "fulltrack": "0",
+            "#text": "0"
+          },
+          "duration": 287,
+          "url": "https://www.last.fm/music/Kanye+West/Graduation/Big+Brother",
+          "name": "Big Brother",
+          "@attr": {
+            "rank": 13
+          },
+          "artist": {
+            "url": "https://www.last.fm/music/Kanye+West",
+            "name": "Kanye West",
+            "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051"
+          }
+        }
+      ]
+    },
+    "listeners": "2507444",
+    "playcount": "91181415",
+    "url": "https://www.last.fm/music/Kanye+West/Graduation",
+    "wiki": {
+      "published": "11 Nov 2022, 05:23",
+      "summary": "Graduation is the third studio album by American rapper Kanye West, released September 11, 2007, by Def Jam and Roc-A-Fella. Inspired by stadium tours, house music and indie rock, Graduation marked a departure from the ornate, soul-based sound of West's previous releases as he musically progressed to more anthemic compositions. West incorporated layered synthesizers and dabbled with electronics while sampling from various music genres and altering his approach to rapping. He conveys an ambivalent outlook on his newfound fame and media scrutiny alongside providing inspirational messages of triumph directed at listeners. The album prematurely concludes the education theme of West's first two studio albums, The College Dropout and Late Registration, as his aborted \"Good Ass Job\" album would have concluded the concept album's themes as <a href=\"https://www.last.fm/music/Kanye+West/Graduation\">Read more on Last.fm</a>.",
+      "content": "Graduation is the third studio album by American rapper Kanye West, released  September 11, 2007, by Def Jam and Roc-A-Fella.\n\nInspired by stadium tours, house music and indie rock, Graduation marked a departure from the ornate, soul-based sound of West's previous releases as he musically progressed to more anthemic compositions. West incorporated layered synthesizers and dabbled with electronics while sampling from various music genres and altering his approach to rapping. He conveys an ambivalent outlook on his newfound fame and media scrutiny alongside providing inspirational messages of triumph directed at listeners. The album prematurely concludes the education theme of West's first two studio albums, The College Dropout and Late Registration, as his aborted \"Good Ass Job\" album would have concluded the concept album's themes as a tetralogy instead of a trilogy as it ended up being.\n\nRecording sessions took place between 2005 and 2007 at several studios in New York and Los Angeles. It was primarily produced by West himself, with contributions from various other producers, including DJ Toomp. The album also features guest appearances from recording artists such as Dwele, T-Pain, Lil Wayne, Mos Def, DJ Premier, and Chris Martin of Coldplay. The cover art and its interior artwork were designed by Japanese contemporary artist Takashi Murakami.\n\nThe coinciding release dates between Graduation and fellow American rapper 50 Cent's Curtis generated much publicity over the idea of a sales competition, resulting in record-breaking sales performances by both albums. The success of the former and the outcome of its competition with the latter marked the end of the dominance of gangsta rap in mainstream hip-hop. This is credited with paving the way for other hip-hop artists who did not conform to gangster conventions to find commercial acceptance.\n\nGraduation debuted at number one on the US Billboard 200, selling over 957,000 copies in the first week of sales. It has since sold over 5 million copies in the United States and been certified quintuple platinum by the Recording Industry Association of America (RIAA). Five accompanying singles were released, including the international hits \"Stronger\", \"Good Life\" and \"Homecoming\", with the former of the three topping the US Billboard Hot 100. The album received widely positive reviews from music critics, with several of them praising the production, and earned West his third Grammy Award for Best Rap Album, as well as his third nomination for Album of the Year. It was named as one of the best albums of 2007 by multiple publications, including Rolling Stone and USA Today, while also listed among numerous decade-end lists and later named to the lists of Rolling Stone's 500 Greatest Albums of All Time and NME's 500 Greatest Albums of All Time.\n\nThe critical reception and commercial success of Graduation left a profound influence on both hip-hop culture and popular music. West has earned praise for his ability to appeal to diverse music audiences such as indie-rock listeners and rave enthusiasts without alienating his core hip-hop audiences. Collaborative tracks such as \"Homecoming\" signaled the diversification of mainstream hip-hop and its intertwining with the genres of alternative and indie-rock in subsequent years. In addition, songs such as \"Everything I Am\" has been cited as \"the best example of the soulful and introspective atmosphere that came to dominate the rap world, from Drake to The Weeknd\". Irish rock band U2 has imparted that touring with West on their Vertigo Tour in turn had a significant effect on their own music as well in regards to the band's twelfth studio album No Line on the Horizon. Lead singer Bono elaborated that West's rapping inspired him to utilize more percussive consonants for his songwriting and vocal performance.\n\nWest's third studio album, particularly with its two hit singles \"Stronger\" and \"Flashing Lights\", has been attributed to not only encouraging other hip-hop artists to incorporate house and electronica elements into their music but also for playing a role in the revival of disco and electro-infused club music in the late-2000s. The number-one hit \"Stronger\" was the leading part of a wave of synthesizer-driven music which combined danceable electro beats with an accessible pop format. It was succeeded by high chart placings and multi-platinum sales of singles by artists and bands ranging from \"Just Dance\" by singer Lady Gaga to \"Right Round\" by rapper Flo Rida. <a href=\"https://www.last.fm/music/Kanye+West/Graduation\">Read more on Last.fm</a>. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply."
+    }
+  }
+}
