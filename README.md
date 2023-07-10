@@ -19,7 +19,8 @@ In the app you will find the following structure:
 >```
 
 ### High-Level Architecture
-![GeneralArch](https://github.com/raafaelima/BlipFM/assets/7543763/6593a1a8-47c6-4522-b539-29ec477486b4)
+
+![GeneralArch](https://github.com/raafaelima/BlipFM/assets/7543763/eefdb8e2-4d9b-492a-bb5a-261c714b1955)
 
 ## Getting Started
 
