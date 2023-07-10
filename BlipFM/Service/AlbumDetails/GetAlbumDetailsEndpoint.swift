@@ -13,11 +13,11 @@ struct GetAlbumDetailsEndpoint: Endpoint {
 
     init(album: Album) {
         if album.mbid.isEmpty {
-            let artistParam = URLQueryItem(name: "artist", value: album.artist)
-            let albumParam = URLQueryItem(name: "album", value: album.name)
+            let artistParam = URLQueryItem(name: EnpointQueryItemKey.artist.rawValue, value: album.artist)
+            let albumParam = URLQueryItem(name: EnpointQueryItemKey.album.rawValue, value: album.name)
             self.params.append(contentsOf: [artistParam, albumParam])
         } else {
-            let mbIdParam = URLQueryItem(name: "mbid", value: album.mbid)
+            let mbIdParam = URLQueryItem(name: EnpointQueryItemKey.mbid.rawValue, value: album.mbid)
             self.params.append(mbIdParam)
         }
     }

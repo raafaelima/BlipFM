@@ -11,4 +11,7 @@ enum EnpointQueryItemKey: String {
     case tag
     case page
     case limit
+    case artist
+    case album
+    case mbid
 }
